@@ -1,0 +1,57 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+    margin: 0;
+
+}
+
+
+.top-section {
+    background-image: url(./images/desktop/image-hero.jpg);
+    background-size: cover;
+    width: 100vw;
+   
+    background-repeat: no-repeat;
+    height: 500px;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    
+
+}
+
+.top-nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.Immersive {
+    height: 28vh;
+    width: 45vw;
+    border: 2px solid white;
+    margin-left: 8em;
+    margin-top: 30px;
+    display: flex;
+}
+
+.Immersive p {
+    color: white;
+    font-size: 3.1em;
+    align-self: center;
+    padding-left: 30px;
+    line-height: 45px;
+    
+}
+
