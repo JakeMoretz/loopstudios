@@ -22,23 +22,25 @@
         <title>Frontend Mentor | Loopstudios landing page</title>
     </head>
     <body>
+        <button
+            class="mobile-nav-toggle"
+            aria-controls="top-nav"
+            aria-expanded="false"
+        >
+            <span class="sr-only"></span>
+        </button>
         <div class="top-section">
-            <button
-                class="mobile-nav-toggle"
-                aria-controls="top-nav"
-                aria-expanded="false"
-            >
-                <span class="sr-only"></span>
-            </button>
-
-            <div class="top-nav" data-visible="false">
-                <img src="./images/logo.svg" alt="" />
-                <div class="links">
-                    <a href="">ABOUT</a>
-                    <a href="">CAREERS</a>
-                    <a href="">EVENTS</a>
-                    <a href="">PRODUCTS</a>
-                    <a href="">SUPPORT</a>
+            <div class="wrapper">
+                <img class="img" src="./images/logo.svg" alt="" />
+                <div class="top-nav" data-visible="false">
+                    <img src="./images/logo.svg" alt="" />
+                    <div class="links">
+                        <a href="">ABOUT</a>
+                        <a href="">CAREERS</a>
+                        <a href="">EVENTS</a>
+                        <a href="">PRODUCTS</a>
+                        <a href="">SUPPORT</a>
+                    </div>
                 </div>
             </div>
 
@@ -111,5 +113,6 @@
                 >Jake Moretz</a
             >
         </div>
+        <script src="main.js"></script>
     </body>
 </html>
