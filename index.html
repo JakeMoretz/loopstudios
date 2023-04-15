@@ -23,14 +23,22 @@
     </head>
     <body>
         <div class="top-section">
-            <div class="top-nav">
+            <button
+                class="mobile-nav-toggle"
+                aria-controls="top-nav"
+                aria-expanded="false"
+            >
+                <span class="sr-only"></span>
+            </button>
+
+            <div class="top-nav" data-visible="false">
                 <img src="./images/logo.svg" alt="" />
                 <div class="links">
-                    <a href="">About</a>
-                    <a href="">Careers</a>
-                    <a href="">Events</a>
-                    <a href="">Products</a>
-                    <a href="">Support</a>
+                    <a href="">ABOUT</a>
+                    <a href="">CAREERS</a>
+                    <a href="">EVENTS</a>
+                    <a href="">PRODUCTS</a>
+                    <a href="">SUPPORT</a>
                 </div>
             </div>
 
@@ -71,7 +79,7 @@
         </div>
 
         <div class="social">
-            <img src="./images/logo.svg" alt="" />
+            <img class="bottom-img" src="./images/logo.svg" alt="" />
             <div class="icons">
                 <img src="./images/icon-facebook.svg" alt="" />
                 <img src="./images/icon-twitter.svg" alt="" />
@@ -85,9 +93,10 @@
                 <a href="">Careers</a>
                 <a href="">Events</a>
                 <a href="">Products</a>
+                <a href="">Support</a>
             </div>
             <div class="copyright">
-                Support © 2021 Loopstudios. All rights reserved.
+                © 2021 Loopstudios. All rights reserved.
             </div>
         </div>
 
@@ -97,7 +106,10 @@
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
-            >. Coded by <a href="#">Your Name Here</a>.
+            >Coded by
+            <a href="https://www.linkedin.com/in/jake-moretz-450668255/"
+                >Jake Moretz</a
+            >
         </div>
     </body>
 </html>
