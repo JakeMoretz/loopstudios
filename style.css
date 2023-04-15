@@ -16,6 +16,7 @@ body {
     grid-template-rows: 1fr 2fr;
 }
 
+/* navigation */
 .top-nav {
     align-items: center;
     display: flex;
@@ -30,6 +31,55 @@ a {
     margin: 10px;
     font-size: 14px;
 }
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+@media (max-width: 1013px) {
+    .top-nav {
+        margin: 0;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: rgb(0, 0, 0, 0.9);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 3em;
+        padding-top: 4em;
+    }
+
+    .top-nav img {
+        padding-bottom: 200px;
+        height: 40px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        font-size: 2.5em;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255, 0.7);
+    }
+    .mobile-nav-toggle {
+        position: absolute;
+        background: url(./images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+        top: 5rem;
+        right: 4rem;
+        z-index: 9999;
+        border: none;
+        display: block;
+    }
+}
+/* navigation */
 
 .Immersive {
     height: 200px;
@@ -182,6 +232,39 @@ button {
 
 .icons {
     display: flex;
-    gap: 10px;
+    gap: 12px;
     height: 20px;
+}
+
+.bottom-img {
+    height: 20px;
+}
+
+.bottom-info {
+    color: white;
+    background-color: black;
+    margin-top: 0;
+    padding-left: 8em;
+    padding-right: 8em;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-links a {
+    margin-left: 0;
+}
+
+.copyright {
+    font-size: 0.8em;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.attribution {
+    background-color: black;
+    color: rgb(255, 255, 255, 0.5);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
