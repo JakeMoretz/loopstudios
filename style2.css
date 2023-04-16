@@ -1,0 +1,126 @@
+@media (max-width: 1013px) {
+    .top-nav {
+        margin: 0;
+        position: fixed;
+        inset: 0 0 0 30%;
+        background-color: rgba(0, 0, 0, 0.9);
+        z-index: 1000;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 3em;
+        padding-top: 2.6em;
+        /* moves 100% of its own width off of the page */
+        transform: translate(100%);
+    }
+    /* if data comes back true, transform nav to 0% */
+    .top-nav[data-visible='true'] {
+        transform: translate(0%);
+    }
+
+    .top-nav img {
+        padding-bottom: 200px;
+        height: 40px;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .links a {
+        font-size: 2.5em;
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 20px;
+        color: rgb(255, 255, 255, 0.7);
+    }
+    .mobile-nav-toggle {
+        position: absolute;
+        background-color: transparent;
+        background-image: url(./images/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        height: 2rem;
+        width: 2rem;
+        top: 3.3rem;
+        right: 10em;
+        z-index: 9999;
+        border: none;
+        display: block;
+    }
+
+    .mobile-nav-toggle:hover {
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .mobile-nav-toggle[aria-expanded='true'] {
+        background-image: url(./images/icon-close.svg);
+    }
+
+    .top-nav img {
+        display: block;
+    }
+
+    a:hover::after {
+        width:20%;
+    }
+
+    /* .top-section {
+        background-image: url(./images/mobile/image-hero.jpg);
+        background-size: cover;       
+        height: 1000px;
+    } */
+    .top-section {
+        height: 600px;
+
+    }
+
+    .Immersive {
+        height: 250px;
+        width: 70vw;
+        margin-right: 8em;
+    }
+
+    .interactive {
+        display:grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 0;
+        height: 900px;
+        width: 70vw;
+       
+
+    }
+
+    .leader {
+        grid-row: 2/3 ;
+        grid-column: 2/3;
+        justify-self: center;
+        align-self: center;
+        left: 0;   
+        padding: 0; 
+        width: 70vw;
+        height: 500px;
+        text-align: center;
+        
+    }
+
+    .vr-img img {
+       width: 70vw;
+    }
+
+    .title {
+       padding-top: 2em;
+       font-size: 3em;
+       text-align: center;
+    }
+
+    .para {
+        font-size: 1em;
+        line-height: 50px;
+        padding-right: 30px;
+        padding-left:30px;
+
+    }
+
+}
+
