@@ -88,6 +88,9 @@ a:hover:after {
 .vr-img img {
     height: 400px;
     width: 50vw;
+    background-image: url(./images/desktop/image-interactive.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .leader {
@@ -136,6 +139,14 @@ button:hover {
     background-color: rgb(9, 10, 26);
     color: white;
     border: none;
+}
+
+.mobile {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+    height: 60px;
+    display: none;
 }
 
 .grid {
@@ -285,4 +296,8 @@ button:hover {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+
+.footer {
+    display: none;
 }
