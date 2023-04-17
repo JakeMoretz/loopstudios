@@ -251,3 +251,125 @@
         text-align: center;
     }
 }
+
+
+
+
+
+
+
+@media (max-width: 820px) {
+
+
+    .vr-img img {
+        margin-top: 7em;
+        margin-bottom: 3em;
+        height: 38vh;        
+        background-size: cover;
+        width: 70vw;
+        grid-row: 1/2;
+        
+       
+    }
+
+    .Immersive {
+        width: 88vw;
+        margin-left: 1.5em;
+
+    }
+
+    .Immersive p {
+        text-align: center;
+    }
+
+    .interactive {
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-rows: 400px 650px;
+        gap: 30px;
+    }
+
+    .leader {
+        grid-row: 2/3;
+    }
+
+    .title {
+        padding-top: 0;
+    }
+
+ 
+
+  @media (max-width:630px) {
+
+    .top-section {
+        height: 800px;
+        background-image: url(./images/mobile/image-hero.jpg);
+        background-size: cover;
+    }
+  }
+
+  @media (max-width:481px) {
+
+    .top-section {
+        background-size: contain;
+    }
+
+    .Immersive {
+        width: 70vw;
+        height: 250px;
+        margin-bottom: 50px;
+        margin:auto;
+        margin-bottom: 150px;
+    }
+
+    .Immersive p{
+        font-size: 2em;
+    }
+
+    .interactive {
+        margin: auto;
+        display: grid;
+        grid-template-rows: 200px 800px;
+    }
+
+    .title {
+        font-size: 2em;
+    }
+
+    .vr-img img {
+        background-size: cover;
+        height: 220px;
+        margin-top: 0;
+        margin-bottom: 0;
+        grid-row: 1/2;
+    }
+
+    .leader {
+        padding-top: 0;
+        grid-row: 2/3
+    }
+
+    .creations-title {
+        display: flex;
+        font-size: 1em;
+        width: 200px;
+        height: 50px;
+        text-align: start;
+    }
+  }
+
+
+   
+
+
+    
+
+   
+
+    
+
+
+
+
+
+}
