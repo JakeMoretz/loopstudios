@@ -67,6 +67,9 @@
 
     .top-section {
         height: 500px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
     }
 
     .wrapper {
@@ -74,10 +77,17 @@
     }
 
     .Immersive {
-        height: 250px;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        display: flex;
+        margin: 60px auto 20px auto;
+        justify-content: center;
+        width: 450px;
+
+        /* height: 250px;
         width: 420px;
         margin-left: 2em;
-        margin-right: 2em;
+        margin-right: 2em; */
     }
 
     .interactive {
@@ -85,7 +95,7 @@
         grid-template-columns: 0;
         height: 900px;
         width: 400px;
-        margin: 3em auto 3em auto;
+        margin: 7em auto 20px auto;
         justify-content: center;
     }
 
@@ -252,41 +262,34 @@
     }
 }
 
-
-
-
-
-
-
 @media (max-width: 820px) {
-
-
     .vr-img img {
-        margin-top: 7em;
-        margin-bottom: 3em;
-        height: 38vh;        
+        /* margin-top: 7em; */
+        /* margin-bottom: 3em; */
+        height: 38vh;
         background-size: cover;
         width: 70vw;
         grid-row: 1/2;
-        
-       
     }
 
     .Immersive {
-        width: 88vw;
-        margin-left: 1.5em;
-
+        /* width: 88vw;
+        margin-left: 1.5em; */
+        display: flex;
+        margin: 60px auto 20px auto;
+        justify-content: center;
+        width: 450px;
     }
 
     .Immersive p {
-        text-align: center;
+        /* text-align: center; */
     }
 
     .interactive {
+        margin-top: 7em;
         padding-bottom: 50px;
         display: grid;
-        grid-template-rows: 400px 650px;
-        gap: 30px;
+        grid-template-rows: 1fr 650px;
     }
 
     .leader {
@@ -297,79 +300,118 @@
         padding-top: 0;
     }
 
- 
+    @media (max-width: 630px) {
+        .top-section {
+            height: 800px;
+            background-image: url(./images/mobile/image-hero.jpg);
+            background-size: cover;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 2fr;
+        }
 
-  @media (max-width:630px) {
+        .interactive {
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+            margin-top: 8em;
+        }
 
-    .top-section {
-        height: 800px;
-        background-image: url(./images/mobile/image-hero.jpg);
-        background-size: cover;
+        .vr-img img {
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            grid-row: 1/2;
+            height: 300px;
+        }
+        .leader {
+            grid-row: 2/3;
+            /* padding-bottom: 30px; */
+        }
+
+        .creations {
+            margin-top: 0;
+        }
+
+        .title {
+            margin-top: 50px;
+        }
+
+        .creations-title {
+            display: flex;
+            font-size: 1.5em;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .Immersive {
+            /* display: flex; */
+            /* margin: 60px auto 20px auto; */
+
+            justify-self: center;
+            align-self: flex-end;
+            grid-row: 2/3;
+            grid-column: 1/2;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 12em;
+        }
+
+        .Immersive p {
+            font-size: 3.5em;
+        }
     }
-  }
 
-  @media (max-width:481px) {
+    @media (max-width: 481px) {
+        .top-section {
+            height: 900px;
+            background-size: contain;
+        }
 
-    .top-section {
-        background-size: contain;
+        .Immersive {
+            width: 70vw;
+            height: 200px;
+            /* margin:auto; */
+            margin-bottom: 150px;
+            justify-self: center;
+            align-self: center;
+        }
+
+        .Immersive p {
+            font-size: 2em;
+        }
+
+        .interactive {
+            margin: auto;
+            display: grid;
+            grid-template-rows: 200px 800px;
+        }
+
+        .title {
+            font-size: 2em;
+        }
+
+        .vr-img img {
+            background-size: cover;
+            height: 220px;
+            margin-top: 30px;
+            margin-bottom: 0;
+            grid-row: 1/2;
+        }
+
+        .leader {
+            padding-top: 0;
+            grid-row: 2/3;
+        }
+
+        .creations-title {
+            display: flex;
+            font-size: 1.2em;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .para {
+            overflow: auto;
+        }
     }
-
-    .Immersive {
-        width: 70vw;
-        height: 250px;
-        margin-bottom: 50px;
-        margin:auto;
-        margin-bottom: 150px;
-    }
-
-    .Immersive p{
-        font-size: 2em;
-    }
-
-    .interactive {
-        margin: auto;
-        display: grid;
-        grid-template-rows: 200px 800px;
-    }
-
-    .title {
-        font-size: 2em;
-    }
-
-    .vr-img img {
-        background-size: cover;
-        height: 220px;
-        margin-top: 0;
-        margin-bottom: 0;
-        grid-row: 1/2;
-    }
-
-    .leader {
-        padding-top: 0;
-        grid-row: 2/3
-    }
-
-    .creations-title {
-        display: flex;
-        font-size: 1em;
-        width: 200px;
-        height: 50px;
-        text-align: start;
-    }
-  }
-
-
-   
-
-
-    
-
-   
-
-    
-
-
-
-
-
 }
